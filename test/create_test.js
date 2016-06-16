@@ -17,14 +17,12 @@ describe('create', () => {
   let request = apemanrequest.create()
   let sleep = apemansleep.create()
   before(() => co(function * () {
-    let app = create({})
-    assert.ok(app)
+    let endpoint = create({})
+    assert.ok(endpoint)
     let port = yield apemanport.find()
     server = sgServer({
-      routes: {
-        '/foo/bar': (ctx) => {
-          ctx.body = 'done!!'
-        }
+      endpoints: {
+        '/foo/bar': endpoint
       }
     })
     baseUrl = `http://localhost:${port}`

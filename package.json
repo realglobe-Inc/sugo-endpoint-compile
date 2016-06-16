@@ -1,5 +1,5 @@
 {
-  "name": "sugo-middleware-compile",
+  "name": "sugo-endpoint-compile",
   "version": "1.0.0",
   "description": "Compiler middleware for SUGOS.",
   "main": "lib",
@@ -10,7 +10,7 @@
   "repository": "realglobe-Inc/sugo-middleware-compile",
   "keywords": [
     "SUGOS",
-    "middleware"
+    "endpoint"
   ],
   "author": {
     "email": "okunishitaka.com@gmail.com",

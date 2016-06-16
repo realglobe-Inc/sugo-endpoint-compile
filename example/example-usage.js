@@ -1,4 +1,4 @@
-/** This is an example to use sugo-middleware-compile */
+/** This is an example to use sugo-endpoint-compile */
 
 'use strict'
 
@@ -6,12 +6,14 @@ const sgServer = require('sg-server')
 
 const server = sgServer({
   middlewares: [
-    require('sugo-middleware-compile')({
-      // Options
-    })
-  ],
-  routes: {
     /* ... */
+  ],
+  endpoint: {
+    '/a': {
+      'POST': require('sugo-endpoint-compile')({
+        // Options
+      })
+    }
   }
 })
 
