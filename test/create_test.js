@@ -37,9 +37,23 @@ describe('create', () => {
   it('Send a request', () => co(function * () {
     let { body, statusCode } = yield request({
       method: 'GET',
-      url: `${baseUrl}/foo/bar`
+      url: `${baseUrl}/foo/bar`,
+      json: true,
+      body: {
+        data: {
+          type: 'javascript',
+          attributes: {
+            script: `
+const a = 1
+let b = 2
+let c = () => a + b
+            `
+          }
+        }
+      }
     })
-    assert.ok(body)
+    assert.equal(body.data.type, 'javascript')
+    assert.ok(body.data.attributes.script)
     assert.equal(statusCode, 200)
   }))
 })

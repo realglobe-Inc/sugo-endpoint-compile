@@ -9,7 +9,7 @@ const server = sgServer({
     /* ... */
   ],
   endpoint: {
-    '/a': {
+    '/procedures/compile': {
       'POST': require('sugo-endpoint-compile')({
         // Options
       })
@@ -18,4 +18,3 @@ const server = sgServer({
 })
 
 server.listen(3000)
-

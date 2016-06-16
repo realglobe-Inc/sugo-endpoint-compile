@@ -1,6 +1,6 @@
 {
   "name": "sugo-endpoint-compile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compiler middleware for SUGOS.",
   "main": "lib",
   "scripts": {
@@ -42,7 +42,7 @@
     "apemansleep": "^1.0.2",
     "coz": "^6.0.2",
     "injectmock": "^2.0.0",
-    "sg-server": "^1.0.3"
+    "sg-server": "^1.2.0"
   },
   "engines": {
     "node": ">=6",
