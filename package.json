@@ -1,6 +1,6 @@
 {
   "name": "sugo-endpoint-compile",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Compiler middleware for SUGOS.",
   "main": "lib",
   "scripts": {
