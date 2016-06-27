@@ -69,7 +69,7 @@ $ npm install sugo-endpoint-compile --save
 Usage
 ---------
 
-Apply endpoint to sg-server, which is internally use by sugo-cloud.
+Create an instance and apply to sg-server (or sugo-cloud)
 
 ```javascript
 /** This is an example to use sugo-endpoint-compile */
