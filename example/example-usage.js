@@ -8,7 +8,7 @@ const server = sgServer({
   middlewares: [
     /* ... */
   ],
-  endpoint: {
+  endpoints: {
     '/procedures/compile': {
       'POST': require('sugo-endpoint-compile')({
         // Options
