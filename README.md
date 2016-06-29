@@ -130,13 +130,13 @@ Then call the api from agent script.
 
 'use strict'
 
-const sgAgentCompile = require('sg-agent-compile')
+const sugoAgentCompile = require('sugo-agent-compile')
 const co = require('co')
 
 const myScript = `() => { /* ... */ }`
 
 co(function * () {
-  let agent = sgAgentCompile('/procedures/compile')
+  let agent = sugoAgentCompile('/procedures/compile')
   let compiled = yield agent.compile(myScript)
   /* .. */
 }).catch((err) => console.error(err))
