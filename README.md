@@ -126,19 +126,30 @@ server.listen(3000)
 Then call the api from agent script.
 
 ```javascript
-/** This is example of client */
-
 'use strict'
 
 const sugoAgentCompile = require('sugo-agent-compile')
 const co = require('co')
 
-const myScript = `() => { /* ... */ }`
-
 co(function * () {
-  let agent = sugoAgentCompile('/procedures/compile')
-  let compiled = yield agent.compile(myScript)
-  /* .. */
+  let agent = sugoAgentCompile('http://my-server.com/procs/compile')
+
+  // Check if server available
+  {
+    let ok = yield agent.knock() // Send HTTP HEAD request.
+    /* ... */
+  }
+
+  // Compile es6 script
+  {
+    let myScript = `
+let foo = (...arg) => ['foo', ...args].join('')
+foo()
+`
+    let compiled = yield agent.compile(myScript)
+    console.log(compiled)
+    /* ... */
+  }
 }).catch((err) => console.error(err))
 
 ```
