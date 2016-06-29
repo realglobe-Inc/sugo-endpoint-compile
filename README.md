@@ -123,6 +123,25 @@ server.listen(3000)
 
 ```
 
+Then call the api from agent script.
+
+```javascript
+/** This is example of client */
+
+'use strict'
+
+const sgAgentCompile = require('sg-agent-compile')
+const co = require('co')
+
+const myScript = `() => { /* ... */ }`
+
+co(function * () {
+  let agent = sgAgentCompile('/procedures/compile')
+  let compiled = yield agent.compile(myScript)
+  /* .. */
+}).catch((err) => console.error(err))
+
+```
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
@@ -166,5 +185,6 @@ Links
 ------
 
 + [sugos](https://github.com/realglobe-Inc/sugos)
++ [sg-agent-compile](https://github.com/realglobe-Inc/sugo-agent-compile)
 
 <!-- Links End -->
