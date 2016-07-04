@@ -195,7 +195,10 @@ This software is released under the [MIT License](https://github.com/realglobe-I
 Links
 ------
 
-+ [sugos](https://github.com/realglobe-Inc/sugos)
-+ [sg-agent-compile](https://github.com/realglobe-Inc/sugo-agent-compile)
++ [sugos][sugos_url]
++ [sg-agent-compile][sg_agent_compile_url]
+
+[sugos_url]: https://github.com/realglobe-Inc/sugos
+[sg_agent_compile_url]: https://github.com/realglobe-Inc/sugo-agent-compile
 
 <!-- Links End -->
