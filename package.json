@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sugo-endpoint-compile#readme",
   "dependencies": {
-    "apeman-brws-request": "^2.1.4",
+    "apeman-brws-request": "^2.1.9",
     "co": "^4.6.0",
     "debug": "^2.2.0",
     "sg-compiler": "^1.0.0"
@@ -32,15 +32,15 @@
     "ape-covering": "^3.0.3",
     "ape-doc": "^2.0.2",
     "ape-tmpl": "^5.0.10",
-    "apemanrequest": "^2.0.1",
+    "apemanrequest": "^2.0.3",
     "aport": "^1.0.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.3",
     "injectmock": "^2.0.0",
-    "sg-server": "^1.2.3",
-    "sugo-agent-compile": "^1.0.4",
-    "sugos-assets": "^1.1.5",
-    "sugos-ci": "^1.4.4"
+    "sg-server": "^1.2.7",
+    "sugo-agent-compile": "^1.0.8",
+    "sugo-ci-endpoint": "^1.0.0",
+    "sugos-assets": "^1.1.9"
   },
   "engines": {
     "node": ">=6",
